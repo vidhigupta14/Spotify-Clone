@@ -45,6 +45,7 @@ body {
     /* margin: auto; */
     border-radius: 8px;
     padding: 8px;
+    overflow-y: auto;
 }
 
 .main {
@@ -101,6 +102,7 @@ body {
     /* margin-left: 0px; */
     padding-left: 10px;
     display: flex;
+    gap: 4px;
     align-items: center;
     cursor: pointer;
 }
@@ -112,7 +114,7 @@ body {
 }
 
 .search img {
-    width: 20px;
+    width: 18px;
     height: 20px;
     margin-right: 10px;
     margin-left: 6px;
@@ -212,7 +214,7 @@ body {
     /* margin-right: 10px; */
 }
 
-.library button:hover{
+.playlist button:hover{
     background-color: #e9e9e9;
     scale: 1.03;
 }
@@ -294,10 +296,7 @@ body {
     margin-left: -10px;
 }
 
-.popular-artists-header {
-    color: white;
-    margin-bottom: 20px;
-}
+
 
 .popular-artists {
     display: flex;
@@ -322,6 +321,13 @@ body {
     /* overflow: hidden; */
 }
 
+.artist-card .play-button{
+    left: 136px;
+}
+.artist-card .play-button:hover{
+    top: 124px;
+}
+
 .artist-info {
     width: 100%;
     padding: 6px;
@@ -344,12 +350,12 @@ body {
 
 .playlist {
     width: 100%;
-    height: 136px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
-    padding-bottom: 0;
+    /* padding-bottom: 20px; */
     /* justify-content: flex-start; */
     color: white;
     background-color: #1F1F1F;
@@ -360,7 +366,7 @@ body {
 
 .podcast {
     margin-top: 30px;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 
 .playlist button {
@@ -377,10 +383,15 @@ body {
     width: 140px;
 }
 
+.playlist p{
+    font-size: 14px;
+}
+
 .quick-links {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    flex-wrap: nowrap;
     color: white;
     padding: 20px;
     color: rgb(196, 196, 196);
@@ -402,6 +413,7 @@ body {
 .ads {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .eng {
@@ -426,6 +438,11 @@ body {
     height: 16px;
     margin-right: 6px;
     filter: invert(1);
+}
+
+.eng:hover {
+    border: solid 1 px white;
+    scale: 1.05;
 }
 
 .album-header {
@@ -492,4 +509,58 @@ body {
 
 .card, .artist-card, .album-card {
   position: relative;
+}
+
+.popular-artists-header {
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 45px;
+}
+
+.popular-artists-header span{
+    color: rgb(196, 196, 196);
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.popular-artists-header span:hover {
+    text-decoration: underline;
+}
+
+.main-header span{
+    color: rgb(196, 196, 196);
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.main-header span:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1220px) {
+    /* .links li{
+        font-size: 12px;
+    } */
+    .search {
+        width: 50px;
+        overflow: hidden;
+    }
+    .quick-links li{
+        font-size: 11px;
+    }
+    .playlist h4{
+        font-size: 14px;
+    }
+    .playlist p{
+        font-size: 12px;
+    }
+}
+
+@media  screen and (max-width: 832px) {
+    
 }
