@@ -3,9 +3,9 @@
 A responsive Spotify UI clone built with HTML, CSS, and JavaScript.
 Features smooth hover effects, a functional hamburger menu, and a clean layout inspired by Spotify’s web player.
 
-🔗 Live Demo: [Spotify Clone](https://vidhigupta14.github.io/Spotify-Clone/)  
+🔗 **Live Demo:** [Spotify Clone](https://vidhigupta14.github.io/Spotify-Clone/)  
 
-✨ Features
+✨ **Features**
 
 📱 Fully Responsive Design — works across desktop, tablet, and mobile
 
@@ -15,7 +15,7 @@ Features smooth hover effects, a functional hamburger menu, and a clean layout i
 
 🎵 Spotify-inspired Layout — sidebar navigation + main content section
 
-🛠️ Tech Stack
+🛠️ **Tech Stack**
 
 HTML5
 
@@ -23,10 +23,10 @@ CSS3 (Flexbox & Media Queries)
 
 JavaScript (vanilla)
 
-🙌 Acknowledgements
+🙌 **Acknowledgements**
 
 Inspired by Spotify Web Player. Built for learning frontend development and UI/UX design.
 
-💡 Connect with Me
+💡 **Connect with Me**
 - [LinkedIn](https://www.linkedin.com/in/vidhigupta14/)  
 - [Behance](https://www.behance.net/vidhigupta20)  
